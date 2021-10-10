@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title> INKAY </title>
+			<link rel="stylesheet" type="text/css" href="css/stylewa.css">
+	</head>
+	
+	<body style="background-color:white">
+		<div class="wrapper">
+			<div class="header">
+				<div class="logo-header">
+				<img src="css/555.png" width="150px" height="150px">
+				</div>
+				
+				<div class="title-header">
+				<font face="Bernard MT Condensed" color="black">
+				INKAY
+				</div>
+			</div>
+		
+		<div class="menu">
+		<ul>
+		<li>Whatsapp:</li>
+		<li>Albert cius	:	082117306538</li>
+		<li>Ricky		:	081295687769</li>
+		<li>Nanda		:	082298691018</li>
+		<li>Niel			:	081385466554</li>
+		</ul>
+		</div>
+		
+		<div class="footer">
+			<font face="Comic Sans MS" color="black">
+			<style>
+#jam,#menit,#detik {
+	font-size:30px;
+}
+</style>
+
+<center>
+		<span id="jam"></span>
+
+		<span id="menit"></span>
+
+		<span id="detik"></span>
+</center>
+
+<script>
+	window.setTimeout("waktu()", 1000);
+
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours()+ " : ";
+		document.getElementById("menit").innerHTML = waktu.getMinutes()+ " : ";
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+</script>
+
+			</div>			
+	</body>

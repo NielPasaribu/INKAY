@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title> INKAY </title>
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	
+	<body style="background-color:white">
+		<div class="wrapper">
+			<div class="header">
+				<div class="logo-header">
+				<img src="css/555.png" width="150px" height="150px">
+				</div>
+				
+				<div class="title-header">
+				<font face="Bernard MT Condensed" color="black">
+				INKAY
+				</div>
+			</div>
+			
+		<div class="menu">
+			<font face="Comic Sans MS" color="black" size="5px">
+				<ul>
+					<li><a href = "whatsapp.html">whatsapp </a></li>
+					<li> <a href = "https://www.tokopedia.com/inkayid">tokopedia</a></li>
+					<li><a href = "https://shopee.co.id/inkay_id">shopee </a></li>
+					<li><a href = "https://www.instagram.com/inkay_id/">instagram</a></li>
+					<li><a href = "https://www.google.co.id/maps/place/Jl.+Jatayu+Dalam+I+9-3,+Husen+Sastranegara,+Kec.+Cicendo,+Kota+Bandung,+Jawa+Barat+40174/@-6.9093717,107.5820155,19z/data=!3m1!4b1!4m5!3m4!1s0x2e68e60cda623241:0x17563a510106dd33!8m2!3d-6.9093557!4d107.5825342">Lokasi</a></li>
+				</ul>
+			</div>
+			
+			
+		<div class="footer">
+			<font face="Comic Sans MS" color="black">
+			<style>
+#jam,#menit,#detik {
+	font-size:30px;
+}
+</style>
+
+<center>
+		<span id="jam"></span>
+
+		<span id="menit"></span>
+
+		<span id="detik"></span>
+</center>
+
+<script>
+	window.setTimeout("waktu()", 1000);
+
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours()+ " : ";
+		document.getElementById("menit").innerHTML = waktu.getMinutes()+ " : ";
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+</script>
+
+			</div>			
+	</body>
